@@ -59,3 +59,31 @@ yarn test
 4. Enable Git Gateway.
 
 _Note: You'll need to specify the Netlify URL when browsing the admin page locally._
+
+## Deployment
+
+### Google App Engine
+
+Build for production
+
+```bash
+yarn generate
+```
+
+Authenticate on right Google Cloud project
+
+```bash
+gcloud init
+```
+
+Select right username and switch to right project
+
+```bash
+shopmacher-labs
+```
+
+Deploy on App Engine
+
+```bash
+gcloud app deploy
+```
